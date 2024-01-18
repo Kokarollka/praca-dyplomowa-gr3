@@ -1,0 +1,82 @@
+<mxfile host="65bd71144e">
+    <diagram name="Strona-1" id="OWfrnh7oPgvm-ASMGF7Z">
+        <mxGraphModel dx="1390" dy="745" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="24" style="edgeStyle=none;html=1;" edge="1" parent="1" source="2" target="21">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=#006EAF;fillColor=#1ba1e2;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.users.csv_file;fontColor=#ffffff;gradientColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="260" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="edgeStyle=none;html=1;fontColor=#000000;" edge="1" parent="1" source="6" target="30">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/SQL_Database_generic.svg;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="313.68" width="78" height="102.63" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=none;html=1;" edge="1" parent="1" source="14" target="21">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=#006EAF;fillColor=#1ba1e2;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.users.csv_file;fontColor=#ffffff;gradientColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="340" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=none;html=1;" edge="1" parent="1" source="15" target="21">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=#006EAF;fillColor=#1ba1e2;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.users.csv_file;fontColor=#ffffff;gradientColor=default;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="420" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="21" target="22">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="&lt;font color=&quot;#000000&quot;&gt;&lt;b&gt;Extract&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=default;verticalAlign=top;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;sketch=0;shadow=0;dashed=0;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="342.5" width="90" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="22" target="23">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="&lt;b&gt;&lt;font color=&quot;#000000&quot;&gt;Transform&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=default;verticalAlign=top;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;sketch=0;shadow=0;dashed=0;" vertex="1" parent="1">
+                    <mxGeometry x="280" y="342.49" width="90" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="23" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="&lt;b&gt;&lt;font color=&quot;#000000&quot;&gt;Load&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;gradientColor=default;verticalAlign=top;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#ffffff;sketch=0;shadow=0;dashed=0;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="342.5" width="90" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="" style="edgeStyle=none;html=1;fontSize=15;fontColor=#FFFFFF;" edge="1" parent="1" source="30" target="47">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/SQL_DataWarehouse.svg;fontColor=#000000;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="310" width="110" height="105.6" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/Chart.svg;fontColor=#000000;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="877.47" y="322.8" width="83.33" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.pie_chart;fontColor=#000000;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="879.1399999999999" y="230" width="80" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="CSV" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="300" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="CSV" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="460" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="CSV" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="384" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="" style="shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#4495D1;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam.2d.report;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="889.94" y="430" width="58.4" height="70.4" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FFFFFF;gradientColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="859.14" y="190" width="120" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="Qlik" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FFFFFF;fontSize=15;" vertex="1" parent="1">
+                    <mxGeometry x="894.14" y="190" width="50" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
