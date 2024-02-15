@@ -1,88 +1,91 @@
-<mxfile host="app.diagrams.net" modified="2024-01-18T10:21:34.909Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="jMHSNXzv71SSdlQbvLVi" version="22.1.20" type="github">
-  <diagram name="Strona-1" id="OWfrnh7oPgvm-ASMGF7Z">
-    <mxGraphModel dx="1050" dy="1691" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="mGC36-ShWpLeE0v8UrWH-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mGC36-ShWpLeE0v8UrWH-1" target="mGC36-ShWpLeE0v8UrWH-4">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="mGC36-ShWpLeE0v8UrWH-1" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#B2C9AB;shape=mxgraph.azure.database;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="81.5" y="-1152" width="48" height="66" as="geometry" />
-        </mxCell>
-        <mxCell id="mGC36-ShWpLeE0v8UrWH-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mGC36-ShWpLeE0v8UrWH-2" target="mGC36-ShWpLeE0v8UrWH-4">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="mGC36-ShWpLeE0v8UrWH-2" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#B2C9AB;shape=mxgraph.azure.database;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="154" y="-1150" width="48" height="66" as="geometry" />
-        </mxCell>
-        <mxCell id="mGC36-ShWpLeE0v8UrWH-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mGC36-ShWpLeE0v8UrWH-3" target="mGC36-ShWpLeE0v8UrWH-4">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="mGC36-ShWpLeE0v8UrWH-3" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#B2C9AB;shape=mxgraph.azure.database;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="227" y="-1150" width="48" height="66" as="geometry" />
-        </mxCell>
-        <mxCell id="mGC36-ShWpLeE0v8UrWH-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mGC36-ShWpLeE0v8UrWH-4" target="mGC36-ShWpLeE0v8UrWH-27">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="169" y="-926" />
-              <mxPoint x="169" y="-926" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="mGC36-ShWpLeE0v8UrWH-4" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;ETL (ekstrakcja danych z plików CSV)&amp;nbsp;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;fillColor=#B2C9AB;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;" vertex="1" parent="1">
-          <mxGeometry x="75.5" y="-994" width="198" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="mGC36-ShWpLeE0v8UrWH-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mGC36-ShWpLeE0v8UrWH-27">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="336.4000244140625" y="-871" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="mGC36-ShWpLeE0v8UrWH-27" value="MySQL" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#B2C9AB;shape=mxgraph.azure.database;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="129.5" y="-886" width="79" height="122" as="geometry" />
-        </mxCell>
-        <mxCell id="mGC36-ShWpLeE0v8UrWH-28" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Przeslanie plików CSV&amp;nbsp; &amp;nbsp;do bazy danych MySQL&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="53.5" y="-940" width="242" height="36" as="geometry" />
-        </mxCell>
-        <mxCell id="mGC36-ShWpLeE0v8UrWH-30" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Pobieranie&amp;nbsp; pliku CSV&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=20;fontFamily=Architects Daughter;labelBackgroundColor=none;fontColor=#46495D;" vertex="1" parent="1">
-          <mxGeometry x="53" y="-1079" width="105" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="mGC36-ShWpLeE0v8UrWH-31" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Pobieranie&amp;nbsp; pliku CSV&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=20;fontFamily=Architects Daughter;labelBackgroundColor=none;fontColor=#46495D;" vertex="1" parent="1">
-          <mxGeometry x="196" y="-1079" width="105" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="mGC36-ShWpLeE0v8UrWH-32" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Pobieranie&amp;nbsp; pliku CSV&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=20;fontFamily=Architects Daughter;labelBackgroundColor=none;fontColor=#46495D;" vertex="1" parent="1">
-          <mxGeometry x="125.5" y="-1096" width="105" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="mGC36-ShWpLeE0v8UrWH-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mGC36-ShWpLeE0v8UrWH-33">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="443" y="-777" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="443" y="-804" />
-              <mxPoint x="444" y="-804" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="mGC36-ShWpLeE0v8UrWH-33" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Przetwarzanie danych w&amp;nbsp; MySQL (filtrowanie, grupowanie, łączenie)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;fillColor=#B2C9AB;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;" vertex="1" parent="1">
-          <mxGeometry x="338" y="-935" width="205" height="103" as="geometry" />
-        </mxCell>
-        <mxCell id="mGC36-ShWpLeE0v8UrWH-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="mGC36-ShWpLeE0v8UrWH-36" target="mGC36-ShWpLeE0v8UrWH-37">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="446" y="-692" />
-              <mxPoint x="446" y="-692" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="mGC36-ShWpLeE0v8UrWH-36" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Narzędzie wizualizacji danych (Qlick)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;fillColor=#B2C9AB;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;" vertex="1" parent="1">
-          <mxGeometry x="342" y="-777" width="201" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="mGC36-ShWpLeE0v8UrWH-37" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Uzyskanie efektu wizualizacji w postaci tabeli, wykresu oraz mapy&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;fillColor=#B2C9AB;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;" vertex="1" parent="1">
-          <mxGeometry x="345" y="-650" width="201" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="mGC36-ShWpLeE0v8UrWH-41" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Przeslanie przetowrzonych&amp;nbsp; &amp;nbsp;danych do narzedzia wizualizacji&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="298" y="-830" width="302" height="36" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e">
+    <diagram name="Strona-1" id="OWfrnh7oPgvm-ASMGF7Z">
+        <mxGraphModel dx="1130" dy="1948" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="mGC36-ShWpLeE0v8UrWH-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mGC36-ShWpLeE0v8UrWH-1" target="mGC36-ShWpLeE0v8UrWH-4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="mGC36-ShWpLeE0v8UrWH-1" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#B2C9AB;shape=mxgraph.azure.database;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="81.5" y="-1152" width="48" height="66" as="geometry"/>
+                </mxCell>
+                <mxCell id="mGC36-ShWpLeE0v8UrWH-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mGC36-ShWpLeE0v8UrWH-2" target="mGC36-ShWpLeE0v8UrWH-4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="mGC36-ShWpLeE0v8UrWH-2" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#B2C9AB;shape=mxgraph.azure.database;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="154" y="-1150" width="48" height="66" as="geometry"/>
+                </mxCell>
+                <mxCell id="mGC36-ShWpLeE0v8UrWH-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mGC36-ShWpLeE0v8UrWH-3" target="mGC36-ShWpLeE0v8UrWH-4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="mGC36-ShWpLeE0v8UrWH-3" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#B2C9AB;shape=mxgraph.azure.database;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="227" y="-1150" width="48" height="66" as="geometry"/>
+                </mxCell>
+                <mxCell id="mGC36-ShWpLeE0v8UrWH-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mGC36-ShWpLeE0v8UrWH-4" target="mGC36-ShWpLeE0v8UrWH-27" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="169" y="-926"/>
+                            <mxPoint x="169" y="-926"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="mGC36-ShWpLeE0v8UrWH-4" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;ETL (ekstrakcja danych z plików CSV)&amp;nbsp;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;fillColor=#B2C9AB;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="75.5" y="-994" width="198" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="mGC36-ShWpLeE0v8UrWH-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mGC36-ShWpLeE0v8UrWH-27" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="336.4000244140625" y="-871" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="mGC36-ShWpLeE0v8UrWH-27" value="MySQL" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#B2C9AB;shape=mxgraph.azure.database;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="129.5" y="-886" width="79" height="122" as="geometry"/>
+                </mxCell>
+                <mxCell id="mGC36-ShWpLeE0v8UrWH-28" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Przeslanie plików CSV&amp;nbsp; &amp;nbsp;do bazy danych MySQL&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="53.5" y="-940" width="242" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="mGC36-ShWpLeE0v8UrWH-30" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Pobieranie&amp;nbsp; pliku CSV&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=20;fontFamily=Architects Daughter;labelBackgroundColor=none;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="53" y="-1079" width="105" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="mGC36-ShWpLeE0v8UrWH-31" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Pobieranie&amp;nbsp; pliku CSV&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=20;fontFamily=Architects Daughter;labelBackgroundColor=none;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="196" y="-1079" width="105" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="mGC36-ShWpLeE0v8UrWH-32" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Pobieranie&amp;nbsp; pliku CSV&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=20;fontFamily=Architects Daughter;labelBackgroundColor=none;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="125.5" y="-1096" width="105" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="mGC36-ShWpLeE0v8UrWH-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mGC36-ShWpLeE0v8UrWH-33" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="443" y="-777" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="443" y="-804"/>
+                            <mxPoint x="444" y="-804"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="mGC36-ShWpLeE0v8UrWH-33" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Przetwarzanie danych w&amp;nbsp; MySQL (filtrowanie, grupowanie, łączenie)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;fillColor=#B2C9AB;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="338" y="-935" width="205" height="103" as="geometry"/>
+                </mxCell>
+                <mxCell id="mGC36-ShWpLeE0v8UrWH-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="mGC36-ShWpLeE0v8UrWH-36" target="mGC36-ShWpLeE0v8UrWH-37" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="446" y="-692"/>
+                            <mxPoint x="446" y="-692"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="mGC36-ShWpLeE0v8UrWH-36" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Narzędzie wizualizacji danych (Qlick)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;fillColor=#B2C9AB;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="342" y="-777" width="201" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="mGC36-ShWpLeE0v8UrWH-37" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Uzyskanie efektu wizualizacji w postaci tabeli, wykresu oraz mapy&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;hachureGap=4;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=20;fillColor=#B2C9AB;strokeColor=#788AA3;labelBackgroundColor=none;fontColor=#46495D;" parent="1" vertex="1">
+                    <mxGeometry x="345" y="-650" width="201" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="mGC36-ShWpLeE0v8UrWH-41" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Przeslanie przetowrzonych&amp;nbsp; &amp;nbsp;danych do narzedzia wizualizacji&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontFamily=Architects Daughter;labelBackgroundColor=none;fontColor=#46495D;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="298" y="-830" width="302" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="682" y="-99" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>
