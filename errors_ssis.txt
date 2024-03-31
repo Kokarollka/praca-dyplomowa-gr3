@@ -1,8 +1,14 @@
 [FactCO2emission [110]] Error: SSIS Error Code DTS_E_OLEDBERROR.  An OLE DB error has occurred. Error code: 0x80004005.
 An OLE DB record is available.  Source: "Microsoft OLE DB Provider for SQL Server"  Hresult: 0x80004005  Description: "Unspecified error".
 
-[FactCO2emission [110]] Error: There was an error with FactCO2emission.Inputs[OLE DB Destination Input].Columns[Entity] on FactCO2emission.Inputs[OLE DB Destination Input]. The column status returned was: "The value violated the integrity constraints for the column.".
+[FactCO2emission [110]] Error: There was an error with FactCO2emission.Inputs[OLE DB Destination Input].Columns[Entity] on FactCO2emission.
+Inputs[OLE DB Destination Input]. The column status returned was: "The value violated the integrity constraints for the column.".
 
-[FactCO2emission [110]] Error: SSIS Error Code DTS_E_INDUCEDTRANSFORMFAILUREONERROR.  The "FactCO2emission.Inputs[OLE DB Destination Input]" failed because error code 0xC020907D occurred, and the error row disposition on "FactCO2emission.Inputs[OLE DB Destination Input]" specifies failure on error. An error occurred on the specified object of the specified component.  There may be error messages posted before this with more information about the failure.
+[FactCO2emission [110]] Error: SSIS Error Code DTS_E_INDUCEDTRANSFORMFAILUREONERROR.  
+The "FactCO2emission.Inputs[OLE DB Destination Input]" failed because error code 0xC020907D occurred, and the error row disposition on "FactCO2emission.Inputs[OLE DB Destination Input]" specifies failure on error. 
+An error occurred on the specified object of the specified component.  There may be error messages posted before this with more information about the failure.
 
-[SSIS.Pipeline] Error: SSIS Error Code DTS_E_PROCESSINPUTFAILED.  The ProcessInput method on component "FactCO2emission" (110) failed with error code 0xC0209029 while processing input "OLE DB Destination Input" (123). The identified component returned an error from the ProcessInput method. The error is specific to the component, but the error is fatal and will cause the Data Flow task to stop running.  There may be error messages posted before this with more information about the failure.
+[SSIS.Pipeline] Error: SSIS Error Code DTS_E_PROCESSINPUTFAILED.  
+The ProcessInput method on component "FactCO2emission" (110) failed with error code 0xC0209029 while processing input "OLE DB Destination Input" (123). 
+The identified component returned an error from the ProcessInput method. The error is specific to the component, but the error is fatal and will cause the Data Flow task to stop running.  
+There may be error messages posted before this with more information about the failure.
