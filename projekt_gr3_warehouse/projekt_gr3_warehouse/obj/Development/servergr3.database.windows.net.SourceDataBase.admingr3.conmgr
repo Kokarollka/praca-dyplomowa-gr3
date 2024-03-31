@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="servergr3.database.windows.net.SourceDataBase.admingr3"
+  DTS:DTSID="{A4F149DA-51E9-4274-921A-3F0E24A2294A}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=servergr3.database.windows.net;User ID=admingr3;Initial Catalog=SourceDataBase;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-projekt_gr3_warehouse-{A4F149DA-51E9-4274-921A-3F0E24A2294A}servergr3.database.windows.net.SourceDataBase.admingr3;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAH1GRhBJVXEyqGBJWfMKTdAAAAAACAAAAAAAQZgAAAAEAACAAAADax42Nk9Xj5FYLfqm6pQiztOFa3tJep0oYoHX4RF7gvwAAAAAOgAAAAAIAACAAAABDqFxdRcOW3chjS9Io1GWwp/CaKbb3l3BaBHrARPcK2YAAAACSqr1o2RkIaqoi8vDHu3m29izfj2Xil3im0TQSRra7sQgyay0UUjrlMFuqKjSe95o2Zyg8lRs1GTJzttJGnDjGBCd+HMJoqyAUc0GO2gEXlhdERJObxVAQW3EX5ic2W9yOFXaE14D0h2w3Vp82hlKPYAnqqYaEGfYK2Qcy8nxGHEAAAAA+YWyJFdPIxug8uv/nI6ZDYWUCwqNIanzQHqUTJB+fPrcVmCxNAvIjVQnTrZ2/jYTVbqOWY3PuzZAbutRDIuaj</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

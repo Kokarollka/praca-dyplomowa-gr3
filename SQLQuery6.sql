@@ -18,12 +18,10 @@ CREATE TABLE [agg].[FactCO2emission](
 	[Entity] [nvarchar](50) NOT NULL
       ,[Code] [nvarchar](50) NOT NULL
       ,[Year] [int] NOT NULL
-	  ,[Share_of_global_annual_CO_emissions] [decimal](10, 2 ) NOT NULL
-	  ,[Annual_CO_emissions_growth] [decimal](10, 2 ) NOT NULL
-	  ,[Annual_CO_emissions] [decimal](18, 2) NOT NULL
-	  ,[Annual_CO_emissions_per_capita] [decimal](18, 2) NOT NULL
-	  ,[Cumulative_CO2_emissions] [int] NOT NULL
-	  ,[Share_of_cumulative_co_emissions] [decimal] (10, 2) NOT NULL
+	  ,[Share_of_global_annual_CO_emissions] [decimal](18, 2 )
+	  ,[Annual_CO_emissions_growth] [decimal](18, 2 )
+	  ,[Annual_CO_emissions] [decimal](18, 2)
+	  ,[Annual_CO_emissions_per_capita] [decimal](18, 2)
 ) ON [PRIMARY]
 GO
 /****** Object:  Table [agg].[DimDate]    Script Date: 2/1/2024 11:04:33 AM ******/

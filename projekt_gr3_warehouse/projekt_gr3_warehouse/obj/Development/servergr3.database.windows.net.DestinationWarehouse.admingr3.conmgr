@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="servergr3.database.windows.net.DestinationWarehouse.admingr3"
   DTS:DTSID="{0138183A-6B64-406B-AE27-AA5D167762BD}"
@@ -10,7 +10,7 @@
       DTS:ConnectionString="Data Source=servergr3.database.windows.net;User ID=admingr3;Initial Catalog=DestinationWarehouse;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-projekt_gr3_warehouse-{0138183A-6B64-406B-AE27-AA5D167762BD}servergr3.database.windows.net.DestinationWarehouse.admingr3;Auto Translate=False;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAH1GRhBJVXEyqGBJWfMKTdAAAAAACAAAAAAAQZgAAAAEAACAAAABmXB3mehRAC2nfoVnnduolPGJAbHyQ/LCmWz7Ene2b4gAAAAAOgAAAAAIAACAAAAD+vraWqri53Rbv76uaHIU3iP1zRCRJUFy3iFo22YhYyoAAAABpYvayDdEkbIzNSny5SmEi0YsD70mwDlyKiQjaOtc2YsdkgsqUMxCKEUdoqyg/ZbrOshRnz4ujdCpNE54fPrBCc6ZKgW0oWuBpBMCloFvBs04ueC2X1P91hgjboQEk6gdGBLdTxURnsPvACEr5rvWVtpiI4z87rnFXh5xSVCgTGkAAAAAB1ln5FX+o+ncHFFJiiGjpgRpJu2DioV66lC/2ixMwuV88z4hx24+D4gkDIabNCJazImtoCOT3Ch2SuobAvJKF</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAH1GRhBJVXEyqGBJWfMKTdAAAAAACAAAAAAAQZgAAAAEAACAAAAAXtuTObtR1Vx2qVf8X9VwxVDnJXk4yTpMpUGrrHgHe9wAAAAAOgAAAAAIAACAAAAACDlZeKLjdbM0NxCpKk+rwRLODFgRXmjaGzMkaAAI9S4AAAACbVeNbaQtAmsxDtd3NHHD4XRky7q4WGHey+255PevwdmnPDPJl4bdr/458aK4EncAOt8CsJ3/I+fZsOXUKuO0maF2dnRYjTuz5WkwTtiIgP4LGGEUsTepiw7coQcTr3OVJ8sUMvLe9a5Cs7JOoSgwR2eq18hijtlF35nkFxi4ub0AAAAAUn2RP4ysjG36oRhi1Te4fLwDR/TQZ8hhf6/6IHA2EXo1zJ2Dn3CrIUNjYWdr1r8iVdospmnD8XoHOlexDMOXQ</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
