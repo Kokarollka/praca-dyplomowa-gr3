@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="raw_to_destination"
   DTS:PackageType="5"
-  DTS:VersionBuild="25"
-  DTS:VersionGUID="{4EE81E83-D1AF-4FB6-A7AD-8EDB549C0F18}">
+  DTS:VersionBuild="26"
+  DTS:VersionGUID="{8E51008E-57CA-4D9A-AF91-DFB0BAA56762}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -845,28 +845,24 @@
                       name="Year" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input].ExternalColumns[Share_of_global_annual_CO_emissions]"
-                      dataType="numeric"
-                      name="Share_of_global_annual_CO_emissions"
-                      precision="18"
-                      scale="2" />
+                      dataType="wstr"
+                      length="50"
+                      name="Share_of_global_annual_CO_emissions" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input].ExternalColumns[Annual_CO_emissions_growth]"
-                      dataType="numeric"
-                      name="Annual_CO_emissions_growth"
-                      precision="18"
-                      scale="2" />
+                      dataType="wstr"
+                      length="50"
+                      name="Annual_CO_emissions_growth" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input].ExternalColumns[Annual_CO_emissions]"
-                      dataType="numeric"
-                      name="Annual_CO_emissions"
-                      precision="18"
-                      scale="2" />
+                      dataType="wstr"
+                      length="50"
+                      name="Annual_CO_emissions" />
                     <externalMetadataColumn
                       refId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input].ExternalColumns[Annual_CO_emissions_per_capita]"
-                      dataType="numeric"
-                      name="Annual_CO_emissions_per_capita"
-                      precision="18"
-                      scale="2" />
+                      dataType="wstr"
+                      length="50"
+                      name="Annual_CO_emissions_per_capita" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -2205,129 +2201,113 @@
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="190,42"
-          Id="Package\Data Flow Task\co-emissions-per-capita"
-          TopLeft="283,499" />
+          Size="159,42"
+          Id="Package\Data Flow Task\FactCO2emission"
+          TopLeft="1613,338" />
         <NodeLayout
-          Size="239,42"
-          Id="Package\Data Flow Task\annual-co2-emissions-per-country"
-          TopLeft="275,162" />
+          Size="130,42"
+          Id="Package\Data Flow Task\Merge Join"
+          TopLeft="1013,224" />
         <NodeLayout
-          Size="187,42"
-          Id="Package\Data Flow Task\change-co2-annual-pct"
-          TopLeft="285,403" />
-        <NodeLayout
-          Size="262,42"
-          Id="Package\Data Flow Task\sort_annual-co2-emissions-per-country"
-          TopLeft="619,163" />
+          Size="223,42"
+          Id="Package\Data Flow Task\annual-share-of-co2-emissions"
+          TopLeft="281,273" />
         <NodeLayout
           Size="247,42"
           Id="Package\Data Flow Task\sort_annual-share-of-co2-emissions"
           TopLeft="619,261" />
         <NodeLayout
+          Size="130,42"
+          Id="Package\Data Flow Task\Merge Join 1"
+          TopLeft="1006,462" />
+        <NodeLayout
+          Size="187,42"
+          Id="Package\Data Flow Task\change-co2-annual-pct"
+          TopLeft="285,403" />
+        <NodeLayout
           Size="211,42"
           Id="Package\Data Flow Task\sort_change-co2-annual-pct"
           TopLeft="617,404" />
         <NodeLayout
+          Size="190,42"
+          Id="Package\Data Flow Task\co-emissions-per-capita"
+          TopLeft="283,499" />
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Data Flow Task\Merge Join 2"
+          TopLeft="1376,337" />
+        <NodeLayout
           Size="214,42"
           Id="Package\Data Flow Task\sort_co-emissions-per-capita"
           TopLeft="612,503" />
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
-          TopLeft="514,183.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="105,0"
-              Start="0,0"
-              End="97.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="97.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[OLE DB Source Output1]"
-          TopLeft="472,424.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="145,0"
-              Start="0,0"
-              End="137.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="137.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[OLE DB Source Output2]"
-          TopLeft="473,522">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="139,0"
-              Start="0,0"
-              End="131.5,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="131.5,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
-          Size="130,42"
-          Id="Package\Data Flow Task\Merge Join 1"
-          TopLeft="1006,462" />
+          Size="262,42"
+          Id="Package\Data Flow Task\sort_annual-co2-emissions-per-country"
+          TopLeft="619,163" />
+        <NodeLayout
+          Size="239,42"
+          Id="Package\Data Flow Task\annual-co2-emissions-per-country"
+          TopLeft="275,162" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Sort Output]"
-          TopLeft="828,425">
+          Id="Package\Data Flow Task.Paths[Sort Output3]"
+          TopLeft="866,282">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="178,58"
+              EndConnector="147,-31.3333333333333"
               Start="0,0"
-              End="170.5,58">
+              End="139.5,-31.3333333333333">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="85,0" />
+                    End="80.9633027522936,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="85,0"
-                    Point2="89,0"
-                    Point3="89,4" />
+                    Point1="80.9633027522936,0"
+                    Point2="84.9633027522936,0"
+                    Point3="84.9633027522936,-4" />
                   <mssgle:LineSegment
-                    End="89,54" />
+                    End="84.9633027522936,-27.3333333333333" />
                   <mssgle:CubicBezierSegment
-                    Point1="89,54"
-                    Point2="89,58"
-                    Point3="93,58" />
+                    Point1="84.9633027522936,-27.3333333333333"
+                    Point2="84.9633027522936,-31.3333333333333"
+                    Point3="88.9633027522936,-31.3333333333333" />
                   <mssgle:LineSegment
-                    End="170.5,58" />
+                    End="139.5,-31.3333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Sort Output2]"
+          TopLeft="881,184">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="132,55.3333333333333"
+              Start="0,0"
+              End="124.5,55.3333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="72.2935779816514,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="72.2935779816514,0"
+                    Point2="76.2935779816514,0"
+                    Point3="76.2935779816514,4" />
+                  <mssgle:LineSegment
+                    End="76.2935779816514,51.3333333333333" />
+                  <mssgle:CubicBezierSegment
+                    Point1="76.2935779816514,51.3333333333333"
+                    Point2="76.2935779816514,55.3333333333333"
+                    Point3="80.2935779816514,55.3333333333333" />
+                  <mssgle:LineSegment
+                    End="124.5,55.3333333333333" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2370,36 +2350,32 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="130,42"
-          Id="Package\Data Flow Task\Merge Join"
-          TopLeft="1013,224" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Sort Output2]"
-          TopLeft="881,184">
+          Id="Package\Data Flow Task.Paths[Sort Output]"
+          TopLeft="828,425">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="132,55.3333333333333"
+              EndConnector="178,58"
               Start="0,0"
-              End="124.5,55.3333333333333">
+              End="170.5,58">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="72.2935779816514,0" />
+                    End="85,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="72.2935779816514,0"
-                    Point2="76.2935779816514,0"
-                    Point3="76.2935779816514,4" />
+                    Point1="85,0"
+                    Point2="89,0"
+                    Point3="89,4" />
                   <mssgle:LineSegment
-                    End="76.2935779816514,51.3333333333333" />
+                    End="89,54" />
                   <mssgle:CubicBezierSegment
-                    Point1="76.2935779816514,51.3333333333333"
-                    Point2="76.2935779816514,55.3333333333333"
-                    Point3="80.2935779816514,55.3333333333333" />
+                    Point1="89,54"
+                    Point2="89,58"
+                    Point3="93,58" />
                   <mssgle:LineSegment
-                    End="124.5,55.3333333333333" />
+                    End="170.5,58" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2408,44 +2384,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Sort Output3]"
-          TopLeft="866,282">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="147,-31.3333333333333"
-              Start="0,0"
-              End="139.5,-31.3333333333333">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="80.9633027522936,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="80.9633027522936,0"
-                    Point2="84.9633027522936,0"
-                    Point3="84.9633027522936,-4" />
-                  <mssgle:LineSegment
-                    End="84.9633027522936,-27.3333333333333" />
-                  <mssgle:CubicBezierSegment
-                    Point1="84.9633027522936,-27.3333333333333"
-                    Point2="84.9633027522936,-31.3333333333333"
-                    Point3="88.9633027522936,-31.3333333333333" />
-                  <mssgle:LineSegment
-                    End="139.5,-31.3333333333333" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="223,42"
-          Id="Package\Data Flow Task\annual-share-of-co2-emissions"
-          TopLeft="281,273" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[OLE DB Source Output3]"
           TopLeft="504,294">
@@ -2480,36 +2418,86 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="139,42"
-          Id="Package\Data Flow Task\Merge Join 2"
-          TopLeft="1376,337" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Merge Join Output]"
-          TopLeft="1078,266">
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output2]"
+          TopLeft="473,522">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="367.5,71"
+              EndConnector="139,0"
               Start="0,0"
-              End="367.5,63.5">
+              End="131.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.5"
-                    Point2="0,35.5"
-                    Point3="4,35.5" />
+                    End="131.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output1]"
+          TopLeft="472,424.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="145,0"
+              Start="0,0"
+              End="137.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="363.5,35.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="363.5,35.5"
-                    Point2="367.5,35.5"
-                    Point3="367.5,39.5" />
+                    End="137.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="514,183.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="105,0"
+              Start="0,0"
+              End="97.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="367.5,63.5" />
+                    End="97.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Merge Join Output2]"
+          TopLeft="1515,358.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="98,0"
+              Start="0,0"
+              End="90.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="90.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2552,24 +2540,32 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="159,42"
-          Id="Package\Data Flow Task\FactCO2emission"
-          TopLeft="1613,338" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Merge Join Output2]"
-          TopLeft="1515,358.5">
+          Id="Package\Data Flow Task.Paths[Merge Join Output]"
+          TopLeft="1078,266">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="98,0"
+              EndConnector="367.5,71"
               Start="0,0"
-              End="90.5,0">
+              End="367.5,63.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="90.5,0" />
+                    End="0,31.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5"
+                    Point2="0,35.5"
+                    Point3="4,35.5" />
+                  <mssgle:LineSegment
+                    End="363.5,35.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="363.5,35.5"
+                    Point2="367.5,35.5"
+                    Point3="367.5,39.5" />
+                  <mssgle:LineSegment
+                    End="367.5,63.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2583,32 +2579,6 @@
   </TaskHost>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\co-emissions-per-capita">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\annual-co2-emissions-per-country">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\change-co2-annual-pct">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -2635,6 +2605,32 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\FactCO2emission">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\change-co2-annual-pct">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\annual-co2-emissions-per-country">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

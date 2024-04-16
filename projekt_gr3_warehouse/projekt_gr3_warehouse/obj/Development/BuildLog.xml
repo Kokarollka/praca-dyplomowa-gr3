@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>projekt_gr3_warehouse</Name>
-    <LastWriteTime>2024-03-31T16:13:57.0019463Z</LastWriteTime>
+    <LastWriteTime>2024-03-31T16:55:45.4473176Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>raw_to_destination.dtsx</Name>
-      <LastWriteTime>2024-03-31T16:51:47.5209296Z</LastWriteTime>
+      <LastWriteTime>2024-04-16T16:42:54.8578854Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
