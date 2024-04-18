@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="raw_to_destination"
   DTS:PackageType="5"
-  DTS:VersionBuild="26"
-  DTS:VersionGUID="{8E51008E-57CA-4D9A-AF91-DFB0BAA56762}">
+  DTS:VersionBuild="28"
+  DTS:VersionGUID="{CEFFAD80-825B-4D96-BF9F-716B2A0744E7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -2191,7 +2191,7 @@
         <NodeLayout
           Size="151,42"
           Id="Package\Data Flow Task"
-          TopLeft="310,247" />
+          TopLeft="625,355" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -2203,7 +2203,7 @@
         <NodeLayout
           Size="159,42"
           Id="Package\Data Flow Task\FactCO2emission"
-          TopLeft="1613,338" />
+          TopLeft="1590,324" />
         <NodeLayout
           Size="130,42"
           Id="Package\Data Flow Task\Merge Join"
@@ -2486,18 +2486,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Merge Join Output2]"
-          TopLeft="1515,358.5">
+          TopLeft="1515,358">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="98,0"
+              EndConnector="75,-13"
               Start="0,0"
-              End="90.5,0">
+              End="67.5,-13">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="90.5,0" />
+                    End="33.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="33.5,0"
+                    Point2="37.5,0"
+                    Point3="37.5,-4" />
+                  <mssgle:LineSegment
+                    End="37.5,-9" />
+                  <mssgle:CubicBezierSegment
+                    Point1="37.5,-9"
+                    Point2="37.5,-13"
+                    Point3="41.5,-13" />
+                  <mssgle:LineSegment
+                    End="67.5,-13" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
