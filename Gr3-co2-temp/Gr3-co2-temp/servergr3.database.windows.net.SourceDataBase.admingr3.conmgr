@@ -7,10 +7,10 @@
     <DTS:ConnectionManager
       DTS:ConnectRetryCount="1"
       DTS:ConnectRetryInterval="5"
-      DTS:ConnectionString="Data Source=servergr3.database.windows.net;User ID=admingr3;Initial Catalog=SourceDataBase;Provider=SQLOLEDB.1;Persist Security Info=True;Application Name=SSIS-Gr3-co2-temp-{07846442-F4BD-4B5E-A3E5-270439F535C4}servergr3.database.windows.net.SourceDataBase.admingr3;Auto Translate=False;">
+      DTS:ConnectionString="Data Source=servergr3.database.windows.net;User ID=admingr3;Initial Catalog=SourceDataBase;Provider=SQLOLEDB.1;Persist Security Info=True;Auto Translate=False;Application Name=SSIS-Gr3-co2-temp-{07846442-F4BD-4B5E-A3E5-270439F535C4}servergr3.database.windows.net.SourceDataBase.admingr3;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAGfExQ49FBUiybxVFD5MuQAAAAAACAAAAAAAQZgAAAAEAACAAAACTHuOm31yI39DUKZNYb8iXZyVcObmAS8ocuqnTrXfQ3wAAAAAOgAAAAAIAACAAAACrgSRR2qpUwU//XtYbbWD5RtDqEYXSDtoEpnMHKo6F6IAAAAAwmYe+44+m6PjdhvvYUsemv+wwdHS9D+8gDKyqzECE+62vYYVgEdIEBJXKbpDeJzDrKNn3aEcag+LJdPuRWoiFIPfz1rol+I5CqboQR6CgD4d83PYHlis+vdxS6PaRx4Ux39aapU+uqVQ9D143R8AueqNt5xIn2tVvVnSy7G3Ef0AAAAAQlGRcBCp0GxYlm0a62G6txWDgUELyzdB/75KimqKW7rudUnGH7Qj+aTH1Wnt/3rFzjpI6DiEnDOkHITnbspkS</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAH1GRhBJVXEyqGBJWfMKTdAAAAAACAAAAAAAQZgAAAAEAACAAAAAB6bXySHSKKov37OVoSn3GvtP243pT0ydq5XAK9W7RoAAAAAAOgAAAAAIAACAAAABVXPZhA1FFfx61CyfLtJ7w4ZxFZcBsT9KojvyNcfQMuIAAAAAjREhgAMhW4eL1i4+asZHbAmjPOq3WAfJvP8B43+xM+jqLZSJvDkZwmxD8yNuxUJ3qgDVevah1KKkYD01ioXJVqXTFUlye0y2IDSAr/Ie3WiWS6ueCmefTJ9aJh2r4WEErtXObo5Mb64iydjXBB4B6Y6V58S22/JLSdtcGULAoHUAAAAChZOOp+EvI++PuikmQODjhy9/sQFUKvl9gaZ4+F3uF2GPADkcwAw3MKH+a7imYgnhzXVBZwhAIcl/u/xQu/h0D</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>

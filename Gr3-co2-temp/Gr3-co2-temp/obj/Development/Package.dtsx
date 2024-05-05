@@ -1,0 +1,1999 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/23/2024 9:07:20 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="KOMPUTEREK"
+  DTS:CreatorName="KOMPUTEREK\izabe"
+  DTS:DTSID="{F0E3CC51-4D02-4C22-B930-F7CA7448479F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5397.1"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="10"
+  DTS:VersionGUID="{3FA1A79B-6924-41DA-9216-D0B505AD53DA}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{EE9E350C-953E-48DE-AC47-99FF94220B66}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\annual-co2-emmisions-per-country"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="annual-co2-emmisions-per-country"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[annual-co2-emissions-per-country]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\annual-co2-emmisions-per-country.Connections[OleDbConnection]"
+                  connectionManagerID="{07846442-F4BD-4B5E-A3E5-270439F535C4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[servergr3.database.windows.net.SourceDataBase.admingr3]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output].Columns[Entity]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output].ExternalColumns[Entity]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output].Columns[Entity]"
+                      name="Entity"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output].Columns[Year]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output].ExternalColumns[Year]"
+                      lineageId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output].Columns[Year]"
+                      name="Year"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output].Columns[Annual_CO_emissions]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output].ExternalColumns[Annual_CO_emissions]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output].Columns[Annual_CO_emissions]"
+                      name="Annual_CO_emissions"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output].ExternalColumns[Entity]"
+                      dataType="wstr"
+                      length="50"
+                      name="Entity" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output].ExternalColumns[Code]"
+                      dataType="wstr"
+                      length="50"
+                      name="Code" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output].ExternalColumns[Year]"
+                      dataType="i4"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output].ExternalColumns[Annual_CO_emissions]"
+                      dataType="wstr"
+                      length="50"
+                      name="Annual_CO_emissions" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Error Output].Columns[Entity]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Error Output].Columns[Entity]"
+                      name="Entity" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Error Output].Columns[Year]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Error Output].Columns[Year]"
+                      name="Year" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Error Output].Columns[Annual_CO_emissions]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Error Output].Columns[Annual_CO_emissions]"
+                      name="Annual_CO_emissions" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\average-monthly-surface-temperature"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="average-monthly-surface-temperature"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[average-monthly-surface-temperature]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select distinct 
+   [Entity],
+   [year],
+   [Average_surface_temperature2] 
+FROM
+   [dbo].[average-monthly-surface-temperature]</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\average-monthly-surface-temperature.Connections[OleDbConnection]"
+                  connectionManagerID="{07846442-F4BD-4B5E-A3E5-270439F535C4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[servergr3.database.windows.net.SourceDataBase.admingr3]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Output].Columns[Entity]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Output].ExternalColumns[Entity]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Output].Columns[Entity]"
+                      name="Entity"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Output].Columns[year]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Output].ExternalColumns[year]"
+                      lineageId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Output].Columns[year]"
+                      name="year"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Output].Columns[Average_surface_temperature2]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Output].ExternalColumns[Average_surface_temperature2]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Output].Columns[Average_surface_temperature2]"
+                      name="Average_surface_temperature2"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Output].ExternalColumns[Entity]"
+                      dataType="wstr"
+                      length="50"
+                      name="Entity" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Output].ExternalColumns[year]"
+                      dataType="i4"
+                      name="year" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Output].ExternalColumns[Average_surface_temperature2]"
+                      dataType="wstr"
+                      length="50"
+                      name="Average_surface_temperature2" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Error Output].Columns[Entity]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Error Output].Columns[Entity]"
+                      name="Entity" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Error Output].Columns[year]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Error Output].Columns[year]"
+                      name="year" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Error Output].Columns[Average_surface_temperature2]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Error Output].Columns[Average_surface_temperature2]"
+                      name="Average_surface_temperature2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\FactCO2emission"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="FactCO2emission"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[agg].[FactCO2emission]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\FactCO2emission.Connections[OleDbConnection]"
+                  connectionManagerID="{73000FCA-F933-4834-AE00-477DFFB1CE18}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[servergr3.database.windows.net.DestinationWarehouse.admingr3]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input].Columns[Entity]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Entity"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input].ExternalColumns[Entity]"
+                      lineageId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output].Columns[Entity]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      cachedSortKeyPosition="2"
+                      externalMetadataColumnId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      lineageId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output].Columns[Year]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input].Columns[Annual_CO_emissions]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Annual_CO_emissions"
+                      externalMetadataColumnId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input].ExternalColumns[Annual_CO_emissions]"
+                      lineageId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output].Columns[Annual_CO_emissions]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input].Columns[Population]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Population"
+                      externalMetadataColumnId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input].ExternalColumns[Population]"
+                      lineageId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output].Columns[Population]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input].Columns[Average_surface_temperature2]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Average_surface_temperature2"
+                      externalMetadataColumnId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input].ExternalColumns[Average_surface_temperature]"
+                      lineageId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output].Columns[Average_surface_temperature2]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input].ExternalColumns[Entity]"
+                      dataType="wstr"
+                      length="50"
+                      name="Entity" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      dataType="i4"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input].ExternalColumns[Annual_CO_emissions]"
+                      dataType="wstr"
+                      length="50"
+                      name="Annual_CO_emissions" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input].ExternalColumns[Population]"
+                      dataType="wstr"
+                      length="50"
+                      name="Population" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input].ExternalColumns[Average_surface_temperature]"
+                      dataType="wstr"
+                      length="50"
+                      name="Average_surface_temperature" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\FactCO2emission.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\FactCO2emission.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\FactCO2emission.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\FactCO2emission.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\FactCO2emission.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Merge Join"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combine two sorted data flows into one using the FULL, LEFT, or INNER join. We recommend this transformation when data flows can be sorted at their sources."
+              name="Merge Join"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of join to perform."
+                  name="JoinType"
+                  typeConverter="JoinType">2</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of columns in the ordering key."
+                  name="NumKeyColumns">2</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the null values are treated as equal values."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indicates the requested maximum buffers per input before blocking."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Left Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Left Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Left Input].Columns[Entity]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Entity"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Entity]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Left Input].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      cachedSortKeyPosition="2"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Year]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Left Input].Columns[Annual_CO_emissions]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Annual_CO_emissions"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Annual_CO_emissions]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Right Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Right Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Right Input].Columns[Entity]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Entity"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Entity]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Right Input].Columns[year]"
+                      cachedDataType="i4"
+                      cachedName="year"
+                      cachedSortKeyPosition="2"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[year]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Right Input].Columns[Average_surface_temperature2]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Average_surface_temperature2"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Average_surface_temperature2]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output]"
+                  isSorted="true"
+                  name="Merge Join Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Entity]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Entity]"
+                      name="Entity"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join.Inputs[Merge Join Left Input].Columns[Entity]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Year]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Year]"
+                      name="Year"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join.Inputs[Merge Join Left Input].Columns[Year]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Annual_CO_emissions]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Annual_CO_emissions]"
+                      name="Annual_CO_emissions">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join.Inputs[Merge Join Left Input].Columns[Annual_CO_emissions]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Average_surface_temperature2]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Average_surface_temperature2]"
+                      name="Average_surface_temperature2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join.Inputs[Merge Join Right Input].Columns[Average_surface_temperature2]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Merge Join 1"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combine two sorted data flows into one using the FULL, LEFT, or INNER join. We recommend this transformation when data flows can be sorted at their sources."
+              name="Merge Join 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of join to perform."
+                  name="JoinType"
+                  typeConverter="JoinType">2</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of columns in the ordering key."
+                  name="NumKeyColumns">2</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the null values are treated as equal values."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indicates the requested maximum buffers per input before blocking."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Merge Join 1.Inputs[Merge Join Left Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Left Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 1.Inputs[Merge Join Left Input].Columns[Entity]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Entity"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Entity]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 1.Inputs[Merge Join Left Input].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      cachedSortKeyPosition="2"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Year]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 1.Inputs[Merge Join Left Input].Columns[Annual_CO_emissions]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Annual_CO_emissions"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Annual_CO_emissions]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 1.Inputs[Merge Join Left Input].Columns[Average_surface_temperature2]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Average_surface_temperature2"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Average_surface_temperature2]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Data Flow Task\Merge Join 1.Inputs[Merge Join Right Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Right Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 1.Inputs[Merge Join Right Input].Columns[Country name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Country name"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Country name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 1.Inputs[Merge Join Right Input].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      cachedSortKeyPosition="2"
+                      lineageId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Year]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Merge Join 1.Inputs[Merge Join Right Input].Columns[Population]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Population"
+                      lineageId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Population]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output]"
+                  isSorted="true"
+                  name="Merge Join Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output].Columns[Entity]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output].Columns[Entity]"
+                      name="Entity"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 1.Inputs[Merge Join Left Input].Columns[Entity]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output].Columns[Year]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output].Columns[Year]"
+                      name="Year"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 1.Inputs[Merge Join Left Input].Columns[Year]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output].Columns[Annual_CO_emissions]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output].Columns[Annual_CO_emissions]"
+                      name="Annual_CO_emissions">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 1.Inputs[Merge Join Left Input].Columns[Annual_CO_emissions]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output].Columns[Average_surface_temperature2]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output].Columns[Average_surface_temperature2]"
+                      name="Average_surface_temperature2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 1.Inputs[Merge Join Left Input].Columns[Average_surface_temperature2]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output].Columns[Population]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output].Columns[Population]"
+                      name="Population">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\Data Flow Task\Merge Join 1.Inputs[Merge Join Right Input].Columns[Population]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\population-and-demography"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="population-and-demography"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[population-and-demography]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\population-and-demography.Connections[OleDbConnection]"
+                  connectionManagerID="{07846442-F4BD-4B5E-A3E5-270439F535C4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[servergr3.database.windows.net.SourceDataBase.admingr3]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].Columns[Country name]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Country name]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].Columns[Country name]"
+                      name="Country name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].Columns[Year]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Year]"
+                      lineageId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].Columns[Year]"
+                      name="Year"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].Columns[Population]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].Columns[Population]"
+                      name="Population"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Country name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Country name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Year]"
+                      dataType="i4"
+                      name="Year" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population of children under the age of 1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population of children under the age of 1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population of children under the age of 5]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population of children under the age of 5" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population of children under the age of 15]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population of children under the age of 15" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population under the age of 25]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population under the age of 25" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population aged 15 to 64 years]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population aged 15 to 64 years" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population older than 15 years]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population older than 15 years" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population older than 18 years]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population older than 18 years" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population at age 1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population at age 1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population aged 1 to 4 years]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population aged 1 to 4 years" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population aged 5 to 9 years]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population aged 5 to 9 years" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population aged 10 to 14 years]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population aged 10 to 14 years" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population aged 15 to 19 years]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population aged 15 to 19 years" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population aged 20 to 29 years]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population aged 20 to 29 years" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population aged 30 to 39 years]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population aged 30 to 39 years" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population aged 40 to 49 years]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population aged 40 to 49 years" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population aged 50 to 59 years]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population aged 50 to 59 years" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population aged 60 to 69 years]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population aged 60 to 69 years" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population aged 70 to 79 years]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population aged 70 to 79 years" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population aged 80 to 89 years]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population aged 80 to 89 years" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population aged 90 to 99 years]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population aged 90 to 99 years" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[Population older than 100 years]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Population older than 100 years" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[population__all__20_24__records]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="population__all__20_24__records" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[population__all__25_29__records]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="population__all__25_29__records" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[population__all__30_34__records]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="population__all__30_34__records" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[population__all__35_39__records]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="population__all__35_39__records" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[population__all__40_44__records]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="population__all__40_44__records" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[population__all__45_49__records]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="population__all__45_49__records" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[population__all__50_54__records]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="population__all__50_54__records" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[population__all__55_59__records]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="population__all__55_59__records" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[population__all__60_64__records]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="population__all__60_64__records" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[population__all__65_69__records]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="population__all__65_69__records" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[population__all__70_74__records]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="population__all__70_74__records" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[population__all__75_79__records]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="population__all__75_79__records" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[population__all__80_84__records]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="population__all__80_84__records" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[population__all__85_89__records]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="population__all__85_89__records" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[population__all__90_94__records]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="population__all__90_94__records" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].ExternalColumns[population__all__95_99__records]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="population__all__95_99__records" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Error Output].Columns[Country name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Error Output].Columns[Country name]"
+                      name="Country name" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Error Output].Columns[Year]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Error Output].Columns[Year]"
+                      name="Year" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Error Output].Columns[Population]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Error Output].Columns[Population]"
+                      name="Population" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Sort"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Sort.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[Entity]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Entity"
+                      lineageId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output].Columns[Entity]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      lineageId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output].Columns[Year]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort.Inputs[Sort Input].Columns[Annual_CO_emissions]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Annual_CO_emissions"
+                      lineageId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output].Columns[Annual_CO_emissions]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Sort.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Entity]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Entity]"
+                      name="Entity"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output].Columns[Entity]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Year]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Year]"
+                      name="Year"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output].Columns[Year]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Annual_CO_emissions]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Sort.Outputs[Sort Output].Columns[Annual_CO_emissions]"
+                      name="Annual_CO_emissions">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output].Columns[Annual_CO_emissions]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Sort 1"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort 1"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Sort 1.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 1.Inputs[Sort Input].Columns[Country name]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Country name"
+                      lineageId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].Columns[Country name]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 1.Inputs[Sort Input].Columns[Year]"
+                      cachedDataType="i4"
+                      cachedName="Year"
+                      lineageId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].Columns[Year]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 1.Inputs[Sort Input].Columns[Population]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Population"
+                      lineageId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].Columns[Population]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Sort 1.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Country name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Country name]"
+                      name="Country name"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].Columns[Country name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Year]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Year]"
+                      name="Year"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].Columns[Year]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Population]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Sort 1.Outputs[Sort Output].Columns[Population]"
+                      name="Population">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output].Columns[Population]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Sort 2"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort 2"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Sort 2.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 2.Inputs[Sort Input].Columns[Entity]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Entity"
+                      lineageId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Output].Columns[Entity]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 2.Inputs[Sort Input].Columns[year]"
+                      cachedDataType="i4"
+                      cachedName="year"
+                      lineageId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Output].Columns[year]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">2</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Sort 2.Inputs[Sort Input].Columns[Average_surface_temperature2]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="Average_surface_temperature2"
+                      lineageId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Output].Columns[Average_surface_temperature2]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Sort 2.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Entity]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Entity]"
+                      name="Entity"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Output].Columns[Entity]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[year]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[year]"
+                      name="year"
+                      sortKeyPosition="2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Output].Columns[year]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Average_surface_temperature2]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Sort 2.Outputs[Sort Output].Columns[Average_surface_temperature2]"
+                      name="Average_surface_temperature2">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Output].Columns[Average_surface_temperature2]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Merge Join Output]"
+              endId="Package\Data Flow Task\Merge Join 1.Inputs[Merge Join Left Input]"
+              name="Merge Join Output"
+              startId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Merge Join Output1]"
+              endId="Package\Data Flow Task\FactCO2emission.Inputs[OLE DB Destination Input]"
+              name="Merge Join Output"
+              startId="Package\Data Flow Task\Merge Join 1.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[OLE DB Source Output]"
+              endId="Package\Data Flow Task\Sort 2.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task\average-monthly-surface-temperature.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[OLE DB Source Output1]"
+              endId="Package\Data Flow Task\Sort.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task\annual-co2-emmisions-per-country.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[OLE DB Source Output2]"
+              endId="Package\Data Flow Task\Sort 1.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task\population-and-demography.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Sort Output]"
+              endId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\Data Flow Task\Sort.Outputs[Sort Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Sort Output1]"
+              endId="Package\Data Flow Task\Merge Join.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Data Flow Task\Sort 2.Outputs[Sort Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Sort Output2]"
+              endId="Package\Data Flow Task\Merge Join 1.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Data Flow Task\Sort 1.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Data Flow Task"
+          TopLeft="511.5,234.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Data Flow Task\Merge Join"
+          TopLeft="487,448" />
+        <NodeLayout
+          Size="264,42"
+          Id="Package\Data Flow Task\average-monthly-surface-temperature"
+          TopLeft="504.5,154.5" />
+        <NodeLayout
+          Size="108,42"
+          Id="Package\Data Flow Task\Sort 2"
+          TopLeft="589,276" />
+        <NodeLayout
+          Size="99,42"
+          Id="Package\Data Flow Task\Sort"
+          TopLeft="270,273" />
+        <NodeLayout
+          Size="249,42"
+          Id="Package\Data Flow Task\annual-co2-emmisions-per-country"
+          TopLeft="178.5,155.5" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Sort Output1]"
+          TopLeft="643,318">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-68.6666666666666,130"
+              Start="0,0"
+              End="-68.6666666666666,122.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,73.072808320951" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,73.072808320951"
+                    Point2="0,77.072808320951"
+                    Point3="-4,77.072808320951" />
+                  <mssgle:LineSegment
+                    End="-64.6666666666666,77.072808320951" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-64.6666666666666,77.072808320951"
+                    Point2="-68.6666666666666,77.072808320951"
+                    Point3="-68.6666666666666,81.072808320951" />
+                  <mssgle:LineSegment
+                    End="-68.6666666666666,122.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Sort Output]"
+          TopLeft="319.5,315">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="213.166666666667,133"
+              Start="0,0"
+              End="213.166666666667,125.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,74.851411589896" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,74.851411589896"
+                    Point2="0,78.851411589896"
+                    Point3="4,78.851411589896" />
+                  <mssgle:LineSegment
+                    End="209.166666666667,78.851411589896" />
+                  <mssgle:CubicBezierSegment
+                    Point1="209.166666666667,78.851411589896"
+                    Point2="213.166666666667,78.851411589896"
+                    Point3="213.166666666667,82.851411589896" />
+                  <mssgle:LineSegment
+                    End="213.166666666667,125.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output1]"
+          TopLeft="303,197.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="16.5,75.5"
+              Start="0,0"
+              End="16.5,68">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.75"
+                    Point2="0,37.75"
+                    Point3="4,37.75" />
+                  <mssgle:LineSegment
+                    End="12.5,37.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="12.5,37.75"
+                    Point2="16.5,37.75"
+                    Point3="16.5,41.75" />
+                  <mssgle:LineSegment
+                    End="16.5,68" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="639.75,196.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,79.5"
+              Start="0,0"
+              End="0,72">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,72" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="212,42"
+          Id="Package\Data Flow Task\population-and-demography"
+          TopLeft="893,155" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Data Flow Task\Sort 1"
+          TopLeft="853,285" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output2]"
+          TopLeft="999,197">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-92.5,88"
+              Start="0,0"
+              End="-92.5,80.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,40"
+                    Point2="0,44"
+                    Point3="-4,44" />
+                  <mssgle:LineSegment
+                    End="-88.5,44" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-88.5,44"
+                    Point2="-92.5,44"
+                    Point3="-92.5,48" />
+                  <mssgle:LineSegment
+                    End="-92.5,80.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="139,42"
+          Id="Package\Data Flow Task\Merge Join 1"
+          TopLeft="798,453" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Merge Join Output]"
+          TopLeft="620,471.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="178,0"
+              Start="0,0"
+              End="170.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="170.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Sort Output2]"
+          TopLeft="906.5,327">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-39,126"
+              Start="0,0"
+              End="-39,118.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,59" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,59"
+                    Point2="0,63"
+                    Point3="-4,63" />
+                  <mssgle:LineSegment
+                    End="-35,63" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-35,63"
+                    Point2="-39,63"
+                    Point3="-39,67" />
+                  <mssgle:LineSegment
+                    End="-39,118.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Data Flow Task\FactCO2emission"
+          TopLeft="792,587" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Merge Join Output1]"
+          TopLeft="869.5,495">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,92"
+              Start="0,0"
+              End="0,84.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,84.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\average-monthly-surface-temperature">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\annual-co2-emmisions-per-country">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\population-and-demography">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\FactCO2emission">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
